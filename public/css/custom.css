@@ -8,5 +8,6 @@
 }
 /* 删除主页分类的按钮 */
 nav#home-nav-button {
+    opacity: 0;
     display: none;
 }
