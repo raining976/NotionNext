@@ -15,7 +15,8 @@ export const fnTextPopup = function (arr, options) {
       const x = event.pageX; const y = event.pageY
       const eleText = document.createElement('span')
       // 随机颜色
-      eleText.style.color = 'rgb(' + 255 * Math.random() + ',' + 255 * Math.random() + ',' + 255 * Math.random() + ')'
+      eleText.style.color = "#" + Math.random().toString().slice(2,8).padEnd(6,"0")
+    //   eleText.style.color = 'rgb(' + 255 * Math.random() + ',' + 255 * Math.random() + ',' + 255 * Math.random() + ')'
       // 动画样式
       eleText.className = 'text-popup'
       this.appendChild(eleText)
